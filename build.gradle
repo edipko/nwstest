@@ -12,13 +12,13 @@ repositories {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'com.spotonresponse.sorlite.NwsTest'
+        attributes 'Main-Class': 'com.spotonresponse.nws.NwsTest'
     }
 }
 
 task fatJar(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'com.spotonresponse.sorlite.NwsTest'
+        attributes 'Main-Class': 'com.spotonresponse.nws.NwsTest'
     }
     baseName = project.name + '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
@@ -38,7 +38,7 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
 
     // Need the Google CAP Processing Library
-    compile files('/Users/edipko/Development/FROMGIT/cap-library/java/dist/cap-library-r11.jar')
+    compile files('~/FROMGIT/cap-library/java/dist/cap-library-r11.jar')
 
     // Log4j
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'

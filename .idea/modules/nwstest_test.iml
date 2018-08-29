@@ -13,7 +13,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../cap-library/java/dist/cap-library-r11.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../~/FROMGIT/cap-library/java/dist/cap-library-r11.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
